@@ -13,3 +13,5 @@ base = declarative_base()
 # instead of connecting to the database directly, we will ask for a session
 # create a new instance of sessionmaker, then point to our engine (the db)
 Session = sessionmaker(db)
+# opens an actual session by calling the session () subclass defined above
+session = Session()
